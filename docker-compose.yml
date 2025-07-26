@@ -93,6 +93,7 @@ services:
     image: "openmaptiles/generate-vectortiles:${TOOLS_VERSION}"
     volumes:
       - ./data:/export
+      - ./data:/import
       - ./build/openmaptiles.tm2source:/tm2source
     networks:
       - postgres
